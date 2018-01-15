@@ -1,21 +1,21 @@
-#include "Graph.h"
+#include "Prim.h"
 # define INF 0x3f3f3f3f
 
 // Allocates memory for adjacency list
-Graph::Graph(int V)
+PrimGraph::PrimGraph(int V)
 {
 	this->V = V;
 	adj = new list<pair<int, int>>[V];
 }
 
-void Graph::addEdge(int src, int dst, int w)
+void PrimGraph::addEdge(int src, int dst, int w)
 {
 	adj[src].push_back(make_pair(dst, w));
 	adj[dst].push_back(make_pair(src, w));
 }
 
 // Prints shortest paths from src to all other vertices
-void Graph::primMST()
+void PrimGraph::primMST()
 {
 	// Create a priority queue to store vertices that
 	// are being preinMST. This is weird syntax in C++.

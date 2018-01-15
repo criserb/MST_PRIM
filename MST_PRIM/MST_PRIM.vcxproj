@@ -111,11 +111,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="Kruskal.cpp" />
+    <ClCompile Include="Prim.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Kruskal.h" />
+    <ClInclude Include="Prim.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MST_PRIM.rc" />

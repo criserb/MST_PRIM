@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Graph
+class PrimGraph
 {
 	int V;    // No. of vertices
 
@@ -16,7 +16,7 @@ class Graph
 	list< pair<int, int> > *adj;
 
 public:
-	Graph(int V);  // Constructor
+	PrimGraph(int V);  // Constructor
 
 				   // function to add an edge to graph
 	void addEdge(int u, int v, int w);
